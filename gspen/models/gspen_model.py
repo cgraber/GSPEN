@@ -86,7 +86,7 @@ class GSPENModel(nn.Module):
     def get_optimizer(self, params):
         unary_lr = params['unary_lr']
         pair_lr = params['pair_lr']
-        lr = params.get('lr', None)
+        combined_lr = params.get('combined_lr', None)
         t_lr = params.get('t_lr', None)
         t_unary_lr = params.get('t_unary_lr', None)
         t_pair_lr = params.get('t_pair_lr', None)

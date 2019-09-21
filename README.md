@@ -4,11 +4,12 @@ The reference codebase for the paper "Graph Structured Prediction Energy Network
 ## Dependencies
 This code was developed/run using the following versions of the following libraries; in some cases, newer versions may be acceptable. The primary exception is PyTorch - some of the syntax used here changed in newer versions.
 * PyTorch 0.4.1
+* torchvision 0.2.0
 * numpy 1.15.4
 * scikit-image 0.13.1
 * tensorflow 1.12.0 (This is for training visualization purposes)
 * arff (for reading bibtex)
-* torchfile (for reading bookmarks data files)
+* torchfile 0.1.0 (for reading bookmarks data files)
 
 Additionally, this code contains a module written in C++; thus, a C++ compiler needs to be installed as well. To make use of LP/ILP inference, you will need a valid Gurobi installation; make sure the GUROBI_HOME environment variable is set to the root dir of this installation.
 
@@ -20,5 +21,5 @@ pip install ./
 If you plan on making your own changes, make sure to include the `-e` flag. Run all scripts from the root directory.
 
 ## Data
-The (compressed) synthetic words datasets are included in the `data/` directory. The bibtex/bookmarks datasets can be downloaded [here](http://mulan.sourceforge.net/datasets-mlc.html). The script `data/arff2tensor.py` converts the raw data files into the form used by the training code; see `scripts/run_bibtex.sh` to see how to run this script. The bookmarks experiment script uses the data files provided by following the instructions listed [here](https://github.com/davidBelanger/SPEN/blob/master/MultiLabelClassification.md).
+The (compressed) synthetic words datasets are included in the `data/` directory. The bibtex/bookmarks datasets can be downloaded [here](http://mulan.sourceforge.net/datasets-mlc.html). The script `data/arff2tensor.py` converts the raw data files into the form used by the training code; see `scripts/run_bibtex.sh` to see how to run this script. The bookmarks experiment script uses the data files provided by following the instructions listed [here](https://github.com/davidBelanger/SPEN/blob/master/MultiLabelClassification.md). Tagging data can be found [here](http://press.liacs.nl/mirflickr/mirdownload.html).
 
