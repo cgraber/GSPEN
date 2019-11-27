@@ -8,7 +8,7 @@ This code was developed/run using the following versions of the following librar
 * numpy 1.15.4
 * scikit-image 0.13.1
 * tensorflow 1.12.0 (This is for training visualization purposes)
-* arff (for reading bibtex)
+* liac-arff (for reading bibtex)
 * torchfile 0.1.0 (for reading bookmarks data files)
 
 Additionally, this code contains a module written in C++; thus, a C++ compiler needs to be installed as well. To make use of LP/ILP inference, you will need a valid Gurobi installation; make sure the GUROBI_HOME environment variable is set to the root dir of this installation.
