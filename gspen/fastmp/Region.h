@@ -339,7 +339,7 @@ public:
 		size_t numVars = r_ptr->varIX.size();
 		cumVarR.assign(numVars, 1);
 		for (size_t v = 1; v < numVars; ++v) {
-			cumVarR[v] = cumVarR[v - 1] * Cardinalities[r_ptr->varIX[v]];
+			cumVarR[v] = cumVarR[v - 1] * Cardinalities[r_ptr->varIX[v-1]];
 		}
 	}
 
